@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Webelo Designs</title>
+  <link rel="icon" type="image/png" href="webelo.png">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .about-graphic {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .brand-box {
+      background-color: #1a1a2e;
+      border-radius: 16px;
+      padding: 30px 40px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      width: 300px;
+    }
+
+    .brand-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .brand-box h3 {
+      margin-bottom: 10px;
+      color: #84e9ff;
+    }
+
+    .arrow {
+      font-size: 3rem;
+      color: #84e9ff;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <img src="webelo.png" alt="Webelo Designs Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+            <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2>Our Story</h2>
+      <div class="about-graphic">
+        <div class="brand-box">
+          <h3>Voltyn Solutions</h3>
+          <p>The brand that started it all.</p>
+        </div>
+        <div class="arrow">➡️</div>
+        <div class="brand-box">
+          <h3>Webelo Designs</h3>
+          <p>Our fresh identity, same passion for websites.</p>
+        </div>
+      </div>
+
+      <p style="max-width: 700px; margin: 40px auto 0; font-size: 1.2rem;">
+        Webelo Designs is a new startup company that helps people bring their ideas online through beautiful, responsive websites at an affordable cost. <br><br>
+        We work closely with each client to understand their needs and budget, ensuring we find the best price possible without compromising quality. Whether you're starting a personal project or launching a business, we're here to help bring it to life!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+  <div class="container">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="web-design.html">Web Development</a></li>
+          <li><a href="seo.html">SEO</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Webelo Designs. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</html>

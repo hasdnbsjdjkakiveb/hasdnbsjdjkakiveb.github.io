@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Webelo Designs</title>
+  <link rel="icon" type="image/png" href="webelo.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <img src="webelo.png" alt="Webelo Designs Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+            <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <div class="container">
+      <h1>Webelo Designs</h1>
+      <p>Your modern partner in professional website development.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+<section class="services" data-aos="fade-up">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <a href="web-design.html" class="card">Web Design</a>
+      <a href="hosting.html" class="card">Hosting</a>
+      <a href="seo.html" class="card">SEO</a>
+    </div>
+  </div>
+</section>
+
+
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Webelo Designs is committed to delivering beautiful, functional websites tailored to your business needs.</p>
+    </div>
+  </section>
+
+  <section class="reviews" data-aos="fade-up">
+  <div class="container">
+    <h2>What Our Clients Say About Us:</h2>
+    <div class="review-carousel">
+      <div class="review-slide active">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"I've worked with one of the owners of Webelo Designs for a while now and I was always satisfied with his work!"</p>
+        <h4 class="author">– Johnathan S.</h4>
+      </div>
+      <div class="review-slide">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Very Satisfied"</p>
+        <h4 class="author">– Josh A.</h4>
+      </div>
+      <div class="review-slide">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Amazing effort put into websites, truly recommend."</p>
+        <h4 class="author">– Tony B.</h4>
+      </div>
+    </div>
+    <div class="review-dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+  </div>
+</section>
+
+
+ <footer>
+  <div class="container">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="web-design.html">Web Development</a></li>
+          <li><a href="seo.html">SEO</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Webelo Designs. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Initialize AOS after DOM is ready because last time that fucked this whole thing up
+  AOS.init({
+    once: true,
+    duration: 800,
+    easing: 'ease-in-out',
+  });
+
+  // Carousel??
+  const slides = document.querySelectorAll('.review-slide');
+  const dots = document.querySelectorAll('.dot');
+  let currentSlide = 0;
+  let interval = setInterval(nextSlide, 5000);
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Let the people click the dots to go to a certain review
+  window.goToSlide = function(index) {
+    clearInterval(interval);
+    showSlide(index);
+    interval = setInterval(nextSlide, 5000);
+  }
+
+  showSlide(currentSlide);
+});
+</script>
+
+
+
+</body>
+</html>
