@@ -15,7 +15,7 @@ header {
   border-bottom: 2px solid #1f6feb;
 }
 .logo {
-  height: 50px;
+  height: 80px;
 }
 .nav {
   display: flex;
@@ -38,6 +38,10 @@ nav a:hover {
 main {
   padding: 4rem 2rem;
   text-align: center;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('../assets/hero4.jpg') center/cover no-repeat;
+  color: #ffffff;
 }
 
 h1 {
