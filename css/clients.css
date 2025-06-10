@@ -1,7 +1,10 @@
 body {
   margin: 0;
   font-family: 'Outfit', sans-serif;
-  background-color: #0a0a0a;
+   background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../assets/hero7.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #ffffff;
 }
 .container {
@@ -15,7 +18,7 @@ header {
   border-bottom: 2px solid #1f6feb;
 }
 .logo {
-  height: 50px;
+  height: 80px;
 }
 .nav {
   display: flex;
