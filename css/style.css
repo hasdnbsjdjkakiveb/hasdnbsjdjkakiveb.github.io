@@ -229,6 +229,12 @@ nav a:hover {
     align-items: center;
   }
 
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .about-text, .facebook-card {
     width: 100%;
   }
@@ -236,10 +242,11 @@ nav a:hover {
   .facebook-card {
     margin-top: 2rem;
   }
-    .review-cards {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
+
+  .review-cards {
+    flex-direction: column; /* changed from row */
+    align-items: center;     /* optional: centers them horizontally */
+    gap: 1.5rem;
   }
 }
 
@@ -408,4 +415,5 @@ nav a:hover {
   .logo {
     height: 55px;
   }
+}
 }
