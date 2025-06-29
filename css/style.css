@@ -160,12 +160,45 @@ nav a:hover {
   background-color: #0f66e0;
 }
 
+.review-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 360px;
+}
+
+.review-card {
+  background-color: #0d1117;
+  border: 2px solid #1f6feb;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.1);
+}
+
+.review-card h3 {
+  color: #58a6ff;
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.review-card p {
+  color: #c9d1d9;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
 .fb-icon {
   font-size: 3rem;
   color: #1877f2;
 }
 
-.fb-btn {
+.google-icon {
+  font-size: 3rem;
+  color: #ea4335;
+}
+
+.fb-btn, .google-btn {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-decoration: none;
@@ -195,6 +228,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
   }
+}
 
 @media (max-width: 768px) {
   .about-flex {
@@ -211,8 +245,8 @@ nav a:hover {
   }
 
   .review-cards {
-    flex-direction: column;
-    align-items: center;     
+    flex-direction: column; /* changed from row */
+    align-items: center;     /* optional: centers them horizontally */
     gap: 1.5rem;
   }
 }
@@ -382,5 +416,4 @@ nav a:hover {
   .logo {
     height: 55px;
   }
-}
 }
