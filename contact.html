@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Webelo Designs</title>
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="WEBELO" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+      <meta name="description" content="Webelo Designs - Professional web development in Edmonton and St. Albert. Custom websites, SEO optimization, and tech repair services. Rated 5 stars on Google & Facebook.">
+<meta name="keywords" content="web design Edmonton, web design St Albert, web design St. Albert, seo edmonton, seo st albert, st albert web design, webilo, website development, SEO services, tech repair, responsive design, Alberta web developers, Webelo Designs, Voltyn Solutions">
+<meta name="author" content="Webelo Designs">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>Webelo Designs</span>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tech-repair.html">Tech Repair</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="showcase.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="btn-nav active">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your project? We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Have a question or ready to get started? Reach out to us using any of the methods below.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call / Text Us</h4>
+                            <p>Main: +1 (825) 803-5048</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>General: info@webelodesigns.com<br>Billing: billing@webelodesigns.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday, Tuesday: 3:00 PM - 9:00 PM<br>Wednesday: 3:00 PM - 4:30 PM <br>Thursday, Friday: 3:00 PM - 9:00 PM <br>Saturday: 11:00 AM - 11:00 PM <br>Sunday: 12:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links" style="margin-top: 2rem;">
+                        <a href="https://www.facebook.com/profile.php?id=61576510201689" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/webelodesigns" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send Us A Message</h2>
+                    <form id="contactForm" action="https://formspree.io/f/meopbrlz" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@webelodesigns.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In / Reason for Contact</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service/reason</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="tech-repair">Tech Repair</option>
+                                <option value="complaints">Complaints</option>
+                                <option value="general-inquiries">General Inquiries</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your project or enter your message here..."></textarea>
+                        </div>
+
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prefer To Talk Directly?</h2>
+                <p>Call us during operating hours to discuss more!</p>
+                <a href="tel:825803504" class="btn btn-secondary btn-large"><i class="fas fa-phone" style="margin-right: 0.5rem;"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>Webelo Designs</span>
+                    </div>
+                    <p>Your partners in modern web development. Creating digital experiences that drive results.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61576510201689" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/webelodesigns/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="showcase.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">SEO Services</a></li>
+                        <li><a href="tech-repair.html">Tech Repair</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@webelodesigns.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (825) 803-5048</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Edmonton, Alberta, Canada</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Webelo Designs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
