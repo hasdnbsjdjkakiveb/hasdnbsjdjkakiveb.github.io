@@ -109,21 +109,22 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="service">Service Interested In / Reason for Contact</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service/reason</option>
-                                <option value="">------ SERVICES ------</option>
-                                <option value="web-development">Web Development</option>
-                                <option value="tech-repair">Tech Repair</option>
-                                <option value="">------ GENERAL ------</option>
-                                <option value="complaints">Complaints</option>
-                                <option value="general-inquiries">General Inquiries</option>
-                                <option value="">------ SITE ISSUES ------</option>
-                                <option value="issues-bugs">Issue/Bug with Website</option>
-                                <option value="">------ OTHER ------</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
+  <label for="service">Service Interested In / Reason for Contact</label>
+  <select id="service" name="service" required>
+    <option value="" disabled selected>Select a service/reason</option>
+    <option value="" disabled>------ SERVICES ------</option>
+    <option value="web-development">Web Development</option>
+    <option value="tech-repair">Tech Repair</option>
+    <option value="" disabled>------ GENERAL ------</option>
+    <option value="complaints">Complaints</option>
+    <option value="general-inquiries">General Inquiries</option>
+    <option value="" disabled>------ SITE ISSUES ------</option>
+    <option value="issues-bugs">Issue/Bug with Website</option>
+    <option value="" disabled>------ OTHER ------</option>
+    <option value="other">Other</option>
+  </select>
+</div>
+
 
                         <div class="form-group">
                             <label for="message">Your Message *</label>
