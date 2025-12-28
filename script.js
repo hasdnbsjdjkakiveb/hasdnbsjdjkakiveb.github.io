@@ -219,6 +219,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (projectName === 'Mostly Harmless') {
                 url = 'https://mostlyharmlessyt.com';
+                } else if (projectName === 'Northfield Snow Services') {
+                url = 'https://northfieldsnow.com';
             } else if (projectName === 'Brennan Warner') {
                 url = 'https://brennanwarner.com';
             } else if (projectName === 'YegSirens') {
